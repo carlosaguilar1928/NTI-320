@@ -1,0 +1,14 @@
+
+
+
+
+
+
+24.2. File System Level Backup
+An alternative backup strategy is to directly copy the files that PostgreSQL uses to store the data in the database; Section 17.2 explains where these files are located. You can use whatever method you prefer for doing file system backups; for example:
+
+tar -cf backup.tar /usr/local/pgsql/data
+
+# you have to shut down the postgres database before you back it up. 
+# use SCP to securely send it to an offsite location 
+# 
